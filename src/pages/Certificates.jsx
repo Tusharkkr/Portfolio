@@ -17,7 +17,7 @@ const certificates = [
 
 const Certificates = () => {
   return (
-    <div className="min-h-screen pt-20 px-4 max-w-4xl mx-auto pb-20">
+    <div className="min-h-screen pt-20 px-4 max-w-4xl mx-auto pb-20 relative overflow-hidden">
       <ScrollAnimation>
         <motion.div
           className="flex items-center gap-3 mb-12"

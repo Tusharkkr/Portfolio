@@ -17,10 +17,10 @@
   </defs>
 
   <!-- Container Box -->
-  <rect width="512" height="512" rx="128" fill="url(#bg)" stroke="url(#codeGrad)" stroke-width="16" />
+  <rect width="512" height="512" rx="128" fill="url(#bg)" stroke="#ffffff" stroke-width="16" />
 
   <!-- Code Graphic < / > -->
-  <g fill="none" stroke="url(#codeGrad)" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowEffect)">
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowEffect)">
     <!-- Left Bracket < -->
     <path d="M 175 195 L 115 256 L 175 317" stroke-width="38" />
     <!-- Right Bracket > -->

@@ -25,12 +25,12 @@ function AppLayout() {
   useVisitorTracking();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col w-full overflow-x-hidden">
       <ErrorBoundary fallback={null}>
         <Background3D />
       </ErrorBoundary>
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow w-full overflow-x-hidden">
         <ErrorBoundary>
           <Suspense fallback={<Loading />}>
             <Routes>

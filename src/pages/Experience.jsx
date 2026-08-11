@@ -31,7 +31,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 max-w-5xl mx-auto pb-16 sm:pb-20">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 max-w-5xl mx-auto pb-16 sm:pb-20 relative overflow-hidden">
       <ScrollAnimation>
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 gradient-text flex items-center gap-3">
           <Briefcase className="w-7 h-7 sm:w-8 sm:h-8 text-purple-400" />

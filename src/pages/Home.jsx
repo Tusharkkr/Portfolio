@@ -162,7 +162,7 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen pt-24 sm:pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto overflow-hidden">
+    <div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto pb-20 relative overflow-hidden">
       {/* Background Ambient Glows */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow" />
       <div className="absolute top-96 right-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -267,18 +267,18 @@ const Home = () => {
         >
           <button
             onClick={handleEmailClick}
-            className="group relative flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 transition-all cursor-copy text-sm sm:text-base text-gray-300 hover:text-white"
+            className="group relative flex max-w-full items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-2.5 text-left text-xs text-gray-300 transition-all hover:bg-white/[0.08] hover:text-white sm:gap-3 sm:px-5 sm:text-sm lg:text-base"
             aria-label={`Email: ${CONTACT_INFO.email}`}
           >
-            <Mail className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
-            <span>{CONTACT_INFO.email}</span>
-            <span className="text-xs bg-white/10 px-2 py-0.5 rounded text-gray-400 group-hover:text-white transition-colors">
+            <Mail className="h-4 w-4 shrink-0 text-purple-400 transition-transform group-hover:scale-110" />
+            <span className="truncate sm:truncate-none">{CONTACT_INFO.email}</span>
+            <span className="hidden shrink-0 rounded bg-white/10 px-2 py-0.5 text-[10px] text-gray-400 transition-colors group-hover:text-white sm:inline-block">
               {copied ? "Copied!" : "Click to copy"}
             </span>
             {copied ? (
-              <Check className="w-4 h-4 text-emerald-400" aria-hidden="true" />
+              <Check className="hidden h-4 w-4 shrink-0 text-emerald-400 sm:inline-block" aria-hidden="true" />
             ) : (
-              <Copy className="w-3.5 h-3.5 text-gray-400 group-hover:text-white" aria-hidden="true" />
+              <Copy className="hidden h-3.5 w-3.5 shrink-0 text-gray-400 group-hover:text-white sm:inline-block" aria-hidden="true" />
             )}
           </button>
         </motion.div>
@@ -412,7 +412,7 @@ const Home = () => {
           </Link>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {FEATURED_PROJECTS.map((project, index) => (
             <motion.div
               key={project.id}
@@ -580,7 +580,7 @@ const Home = () => {
           </div>
 
           {/* Window Body */}
-          <div className="p-6 font-mono text-xs sm:text-sm text-gray-300 bg-black/40 min-h-[220px]">
+          <div className="p-6 font-mono text-xs sm:text-sm text-gray-300 bg-black/40 min-h-[220px] overflow-x-auto">
             {activeTab === "profile" && (
               <div>
                 <div className="text-gray-500 mb-2">// Quick Developer Specs</div>

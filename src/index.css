@@ -10,8 +10,9 @@
   font-family: 'Inter', sans-serif;
 }
 
-body {
+html, body {
   @apply bg-black text-gray-100;
+  max-width: 100%;
   overflow-x: hidden;
 }
 

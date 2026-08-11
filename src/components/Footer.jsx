@@ -45,7 +45,7 @@ const Footer = () => {
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
                   className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
-                  aria-label="Email Niladri Chatterjee"
+                  aria-label="Email Tushar Kumar"
                 >
                   <Mail className="w-4 h-4" aria-hidden="true" />
                   {CONTACT_INFO.email}
@@ -55,7 +55,7 @@ const Footer = () => {
                 <a
                   href={`tel:${CONTACT_INFO.phoneRaw}`}
                   className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
-                  aria-label="Call Niladri Chatterjee"
+                  aria-label="Call Tushar Kumar"
                 >
                   <Phone className="w-4 h-4" aria-hidden="true" />
                   {CONTACT_INFO.phone}
@@ -66,7 +66,7 @@ const Footer = () => {
 
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Quick Links</h3>
-            <div className="grid grid-cols-3 gap-x-6 gap-y-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-3">
               <div>
                 {column1.map((link) => (
                   <Link

@@ -57,7 +57,7 @@ const educationData = [
 
 const Education = () => {
   return (
-    <div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto pb-20">
+    <div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto pb-20 relative overflow-hidden">
       <ScrollAnimation>
         <motion.div
           className="flex items-center gap-3 mb-12"
@@ -76,7 +76,7 @@ const Education = () => {
             <div className={`relative bg-gradient-to-r ${edu.bgGradient} rounded-2xl p-6 sm:p-8 backdrop-blur-md hover:border-white/20 transition-all border border-white/10 shadow-xl overflow-hidden group`}>
               {/* Subtle Ambient Decorative Glow & Pattern */}
               <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-white/5 rounded-full blur-2xl group-hover:bg-white/10 transition-all pointer-events-none" />
-              <div className="absolute top-4 right-4 sm:top-6 sm:right-6 flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10 text-xs sm:text-sm text-gray-300">
+              <div className="relative sm:absolute top-4 right-4 sm:top-6 sm:right-6 flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10 text-xs sm:text-sm text-gray-300 w-fit mb-4 sm:mb-0">
                 <Calendar className="w-4 h-4 text-purple-400" />
                 <span>{edu.duration}</span>
               </div>

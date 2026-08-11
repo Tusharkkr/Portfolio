@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="relative">
         <div className="absolute inset-0 bg-black/50 backdrop-blur-xl" />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-6xl px-4">
           <div className="flex h-16 items-center">
             {/* Left — Logo */}
             <div className="flex-shrink-0">
@@ -61,7 +61,7 @@ const Navbar = () => {
             </div>
 
             {/* Right — Nav links (md+) */}
-            <div className="hidden md:flex flex-shrink-0 items-center space-x-1 ml-auto lg:ml-0">
+            <div className="hidden md:flex flex-shrink-0 items-center space-x-1 ml-auto">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
