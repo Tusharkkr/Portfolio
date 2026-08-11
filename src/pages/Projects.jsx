@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Learning Management System (LMS)",
+    title: "NextSkill – Learning Management System",
     description:
       "A responsive LMS frontend built using React.js with modular components, Context API state management, and React Router DOM for seamless client-side navigation. Styled with Tailwind CSS for all devices.",
     icon: <GraduationCap className="w-8 h-8 text-purple-400" />,
@@ -39,9 +39,9 @@ const projects = [
   },
   {
     id: 3,
-    title: "HQMovies",
+    title: "HQMovies – Movie Browsing Platform",
     description:
-      "A responsive movie browsing application displaying Trending, Popular, Top Rated, and Upcoming movies and TV Shows. Features movie search, dynamic routing, loading states, and Redux Toolkit state management.",
+      "A responsive movie browsing platform powered by TMDB API. Features category filters (Trending, Popular, Top Rated), instant movie search, rating scores, immersive trailer previews, and Redux Toolkit state management.",
     icon: <Film className="w-8 h-8 text-blue-400" />,
     gradient: "from-blue-900/40 via-blue-950/20 to-gray-900",
     badgeColor: "bg-blue-500/20 text-blue-300 border-blue-500/30",
