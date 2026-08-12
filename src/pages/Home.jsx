@@ -240,7 +240,7 @@ const Home = () => {
           </Link>
 
           <a
-            href="https://drive.google.com/file/d/1m3RAtZwJeTFWuwMEJCV3iRgfeTcm0eyX/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1BxB1NWWF-MltPJT6Bog19OtRY24Q45NG/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full text-sm sm:text-base backdrop-blur-md transition-all border border-white/10 flex items-center gap-2"
